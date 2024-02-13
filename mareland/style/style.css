@@ -304,7 +304,8 @@ iframe {
   font-family: 'Prata';
   font-weight: 500;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: #192f42;
 }
 
 #landingSec > img {
@@ -316,7 +317,7 @@ iframe {
 #landingSec #lndQt {
   margin-top: 15px;
   border: 1px solid #E3D7C833;
-  background-color: #E3D7C833;
+  background-color: #e8e2dbd9;
   -webkit-box-shadow: 15px 18px 28px rgba(0, 0, 0, 0.25);
           box-shadow: 15px 18px 28px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -330,8 +331,8 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 25px;
-  padding-bottom: 15px;
-  width: 70%;
+  padding-bottom: 20px;
+  width: 35%;
 }
 
 #landingSec #lndQt p {
@@ -341,9 +342,10 @@ iframe {
 }
 
 #landingSec #lndQt p img {
+  display: none !important;
   width: 1vw;
   position: absolute;
-  bottom: 75px;
+  bottom: 65px !important;
   left: -30px;
 }
 
