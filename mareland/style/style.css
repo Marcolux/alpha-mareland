@@ -320,25 +320,6 @@ iframe {
   background-color: #e8e2dbfd;
   -webkit-box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
           box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  width: 30%;
-}
-
-#landingSec #lndQt p {
-  font-size: 25px;
-  position: relative;
-  margin-bottom: 0px;
 }
 
 #landingSec #lndQt p img {

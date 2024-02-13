@@ -250,16 +250,11 @@ iframe{
 		border: 1px solid #E3D7C833;
 		background-color: #e8e2dbfd;
 		box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 25px;
-		padding-bottom: 20px;
-		width: 30%;
+		// flex-direction: column;
 		p{
-			font-size: 25px;
-			position: relative;
-			margin-bottom: 0px;
+			// font-size: 25px;
+			// position: relative;
+			// margin-bottom: 0px;
 			img{
 				display:  none !important;
 				width: 1vw;
