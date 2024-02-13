@@ -170,7 +170,7 @@ iframe {
   left: 25%;
   width: 0%;
   height: 5%;
-  background-color: #0F4C81;
+  background-color: #CDAA7F;
   -webkit-transition: width 0.2s ease, height 0.2s ease;
   transition: width 0.2s ease, height 0.2s ease;
   border-radius: 0px;
@@ -258,6 +258,10 @@ iframe {
   z-index: 0;
 }
 
+.navBar.biggerScreen #navBgScn a:hover, .navBar.biggerScreen #navBgScn a:active {
+  text-shadow: #000;
+}
+
 .navBar.biggerScreen #navBgScn a::before {
   content: '';
   position: absolute;
@@ -265,7 +269,7 @@ iframe {
   left: -15%;
   width: 0%;
   height: 25%;
-  background-color: #0F4C81;
+  background-color: #CDAA7F;
   -webkit-transition: width 0.2s ease, height 0.2s ease;
   transition: width 0.2s ease, height 0.2s ease;
   border-radius: 0px;
