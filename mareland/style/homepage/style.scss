@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	height: 100vh;
 	box-sizing: border-box; /* This ensures that padding and border are included in the total width and height */
-	font-family: 'Prata';
+	font-family: 'Ledger';
 	min-width: 380px;
 }
 iframe{
@@ -16,13 +16,16 @@ iframe{
 	box-sizing: border-box;
 	border: 1px solid black;	  
 }
-
+$text_color_nav: #fff;
+$backGroundNav: #192f42;
 
 // NAVIGATION BAR ============
 .navBar {
-	background-color: #192f42;
-	font-family: 'Bebas Neue';
-	font-size: 3vh;
+	background-color: $backGroundNav;
+	font-family: 'Playfair Display';
+	font-size: 25px;
+	color: $text_color_nav;
+	font-weight: 500 !important;
 
 	&.mobileView {
 		max-width: 50px;
@@ -117,7 +120,7 @@ iframe{
 				align-items: center;
 				padding: 10px;
 				font-size: 25px;
-				color: #dadada; 
+				color: $text_color_nav; 
 				margin-top: 10px;
 				margin-bottom: 10px;
 				max-width: 0px;
@@ -170,13 +173,16 @@ iframe{
 		}
 	}
 	&.biggerScreen{
+		position: fixed;
+		top: 0px;
 		display: flex;
 		width: 100%;
 		height: 10vh;
-		min-height: 50px;
+		// min-height: 50px;
 		padding-top: 1.5vh;
 		padding-bottom: 1.5vh;
 		border-bottom: 3px solid #CDAA7F;
+		z-index: 9999;
 		div#hambContainer,nav#navMenu{
 			display: none;
 		}
@@ -185,7 +191,6 @@ iframe{
 			width: 100%;
 			justify-content: left;
 			align-items: center;
-			position: relative;
 			img{
 				height: 8vh;
 				max-height: 100px;
@@ -194,7 +199,7 @@ iframe{
 				margin-right: 6vw;
 			}
 			a{
-				color: #FFF;
+				color: $text_color_nav;
 				margin-right: 2vw;
 				text-decoration: none !important;
 				position: relative;
@@ -205,12 +210,12 @@ iframe{
 				&::before{
 					content: '';
 					position: absolute;
-					bottom: 16% ;
+					bottom: -5px ;
 					left: -15%;
 					width: 0%;
-					height: 25%;
+					height: 15%;
 					background-color: #CDAA7F;
-					transition: width 0.2s ease, height 0.2s ease;
+					transition: width 0.2s ease, height 0.1s ease;
 					border-radius: 0px;
 					pointer-events: none;
 					z-index: -1;
@@ -223,7 +228,7 @@ iframe{
 			
 					&::before {
 						height: 100%;
-						bottom: 5%; 
+						bottom: 0%; 
 						border-radius: 0;
 					}
 				}
@@ -231,230 +236,204 @@ iframe{
 		}
 	}
 }
-
-#landingSec{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Prata';
-	font-weight: 500;
-	width: 100%;
-	padding-bottom: 20px;
-	background-color: #192f42;
-	>img{
+.hompageBody{
+	position: relative;
+	#landingSec{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Prata';
+		font-weight: 500;
 		width: 100%;
-		// height: auto;
-		max-height: 67vh;
+		background-color: #192f42;
 		border-bottom: 3px solid #CDAA7F;
+		padding-top: 13.3vh;
+		>img{
+			width: 100%;
+			max-height: 67vh;
+			border-bottom: 3px solid #CDAA7F;
+		}
+		#lndQt{
+			
+			font-family: 'Prata';
+			font-weight: 400 !important;
+			color: $text_color_nav;
+			position: -webkit-sticky; /* For Safari */
+			position: sticky;
+			top: 340px; /* Adjust this value as needed */
+			z-index: 10; /* Ensure it sits above other content */
+		}
 	}
-	#lndQt{
-		margin-top: 15px;
-		border: 2px solid #CDAA7F;
-		border-style: inset;
-		background-color: #fffffffd;
-		box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
-		font-family: 'Ledger';
-		// flex-direction: column;
-		p{
-			position: relative;
-			text-decoration: underline !important;
-			text-decoration: double !important;
-			// background-color: #CDAA7F;
-			// &::after{
-			// 	content: '';
-			// 	width: 100%;
-			// 	height: 5%;
-			// 	background-color: #CDAA7F;
-			// 	position: absolute;
-			// 	bottom: 10px;
-				
-			// }
-			// font-size: 25px;
-			// position: relative;
-			// margin-bottom: 0px;
-			img{
-				&.openingQt{
-
-					// display:  none !important;
-					width: 1vw;
-					position: absolute;
-					bottom: 65px !important;
-					left: -30px;
+		
+	#marelandSect{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background-color: #79797926;
+		border-top: 2px solid #CDAA7F;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		>div#marelandCont{
+			width: 85% !important;
+			display: flex;
+			background-color: #FFF;
+			padding: 25px;
+			display: flex;
+			justify-content: center;
+			#leftTxt {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				min-height: 35vh ;
+				width: 50%;
+				padding-left: 35px !important;
+				>div{
+					display: flex;
+					justify-content: center;
+					align-items: start;
+					>p:not(.sctnHpTitles){
+						text-align: justify;
+						text-justify:newspaper;
+					}
 				}
-				&.closingQt{
-
+				.barSep{
+					width: 10px;
+					min-height: 300px;
+					height: 45vh;
+					background-color: #CDAA7F;
+				}
+			}
+			#picCont{
+				width: 50% !important;
+				padding-left: 20px !important;
+				div{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+				.marelandImg1{
+					height: 50%;
+				}
+				.marelandImg2{
+					height: 40%;
 				}
 			}
 		}
 	}
-}
-	
-#marelandSect{
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: #79797926;
-	border-top: 2px solid #CDAA7F;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	>div#marelandCont{
-		width: 85% !important;
-		display: flex;
-		background-color: #FFF;
-		padding: 25px;
+	section#rclmtnSect{
+		background-color: #E3D7C84D;
+		border-top: 2px solid #CDAA7F;
+		width: 100%;
+		height: auto;
 		display: flex;
 		justify-content: center;
-		#leftTxt {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		position: relative;
+		div#rclmtnsCont{
+			background-color: #FFF;
+			width: 85%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			position: relative;
-			min-height: 35vh ;
-			width: 50%;
-			padding-left: 35px !important;
-			>div{
+			height: 100%;
+			div#rclmtnPicsSide{
+				padding: 20px;
+				width: 45%;
+				height: 100%;
 				display: flex;
-				justify-content: center;
-				align-items: start;
-				>p:not(.sctnHpTitles){
-					text-align: justify;
-					text-justify:newspaper;
+				align-items: center;
+				flex-direction: column;
+				justify-content: space-around;
+				div#rclmtnBigPic{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img{
+						width: 90%;
+						max-height: 80vh;
+						object-fit: cover;
+						object-position: bottom left;
+					}
+				}
+				#rclmtnPicSelector{
+					width: 87%;
+					height: 70px;
+					padding: 5px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					border: 2px solid #CDAA7F;
+					margin-top: 10px;
+					#scroller{
+						display: flex;
+						align-items: center;
+						overflow-x: auto;
+						scroll-behavior: smooth;
+						height: 100%;
+						img{
+							object-fit: cover;
+							object-position: bottom left;
+							&.picClicked{
+								border: 3px solid #0F4C81;
+							}
+						}
+					}
+					a{
+						cursor: pointer;
+						border: 0px;
+						background-color: #FFF;
+						color: #CDAA7F;
+						font-size: 40px;
+						padding-left: 10px;
+						padding-right: 10px;
+						pointer-events: all;
+						&.right{
+							margin-left: 10px;
+						}
+						&.left{
+							margin-left: 5px;
+						}
+						&.hide{
+							display: flex !important;
+							color: white !important;
+							pointer-events: none !important;
+						}
+					}
+					::-webkit-scrollbar {
+						display: none;
+					}
 				}
 			}
-			.barSep{
-				width: 10px;
-				min-height: 300px;
-				height: 45vh;
-				background-color: #CDAA7F;
-			}
-		}
-		#picCont{
-			width: 50% !important;
-			padding-left: 20px !important;
-			div{
+			#rclmtnDescr{
+				width: 50%;
+				height: 100%;
+				padding: 20px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				#rclmtnDescrText{
+					width: 95%;
+					p{
+						font-size: 18px !important;
+						text-align: justify !important;
+						text-justify: newspaper !important;
+					}
+				}
 			}
-			.marelandImg1{
-				height: 50%;
-			}
-			.marelandImg2{
-				height: 40%;
-			}
+		}
+		img#decoboat{
+			position: absolute;
+			bottom: -30px !important;
+			right: 20px;
+			width: 220px;
 		}
 	}
 }
-section#rclmtnSect{
-	background-color: #E3D7C84D;
-	border-top: 2px solid #CDAA7F;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	position: relative;
-	div#rclmtnsCont{
-		background-color: #FFF;
-		width: 85%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		div#rclmtnPicsSide{
-			padding: 20px;
-			width: 45%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			justify-content: space-around;
-			div#rclmtnBigPic{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				img{
-					width: 90%;
-					max-height: 80vh;
-					object-fit: cover;
-					object-position: bottom left;
-				}
-			}
-			#rclmtnPicSelector{
-				width: 87%;
-				height: 70px;
-				padding: 5px;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				border: 2px solid #CDAA7F;
-				margin-top: 10px;
-				#scroller{
-					display: flex;
-					align-items: center;
-					overflow-x: auto;
-					scroll-behavior: smooth;
-					height: 100%;
-					img{
-						object-fit: cover;
-						object-position: bottom left;
-						&.picClicked{
-							border: 3px solid #0F4C81;
-						}
-					}
-				}
-				a{
-					cursor: pointer;
-					border: 0px;
-					background-color: #FFF;
-					color: #CDAA7F;
-					font-size: 40px;
-					padding-left: 10px;
-					padding-right: 10px;
-					pointer-events: all;
-					&.right{
-						margin-left: 10px;
-					}
-					&.left{
-						margin-left: 5px;
-					}
-					&.hide{
-						display: flex !important;
-						color: white !important;
-						pointer-events: none !important;
-					}
-				}
-				::-webkit-scrollbar {
-					display: none;
-				}
-			}
-		}
-		#rclmtnDescr{
-			width: 50%;
-			height: 100%;
-			padding: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			#rclmtnDescrText{
-				width: 95%;
-				p{
-					font-size: 18px !important;
-					text-align: justify !important;
-					text-justify: newspaper !important;
-				}
-			}
-		}
-	}
-	img#decoboat{
-		position: absolute;
-		bottom: -30px !important;
-		right: 20px;
-		width: 220px;
-	}
-}
+
+
 footer{
 	border-top: 2px solid #CDAA7F;
 	background-color: #192f42;
@@ -514,9 +493,34 @@ footer{
 		text-decoration: none !important;
 	}
 }
-a#logoNav::before{
-	display: none !important;
+a#logoNav{
+	&::before{
+		display: none !important;
+	}
+	
+	img{
+		transform: rotate(0deg) scale(1);
+		transition: transform .2s ease;
+
+		&:hover{
+			transform: rotate(0deg) scale(1.1);
+		}
+		&:active{
+			transform: rotate(180deg) scale(1);
+		}
+	}
 }
+// @keyframes rotate {
+		
+// 	0%{
+// 		transform: rotate(0deg);
+// 	}
+// 	50% {
+// 		transform:rotate(180deg)
+// 	}
+// }
+
+
 
 @media only screen and (max-width: 1560px) {	
 	#marelandSect{

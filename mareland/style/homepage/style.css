@@ -5,7 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* This ensures that padding and border are included in the total width and height */
-  font-family: 'Prata';
+  font-family: 'Ledger';
   min-width: 380px;
 }
 
@@ -22,8 +22,10 @@ iframe {
 
 .navBar {
   background-color: #192f42;
-  font-family: 'Bebas Neue';
-  font-size: 3vh;
+  font-family: 'Playfair Display';
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500 !important;
 }
 
 .navBar.mobileView {
@@ -153,7 +155,7 @@ iframe {
           align-items: center;
   padding: 10px;
   font-size: 25px;
-  color: #dadada;
+  color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 0px;
@@ -213,15 +215,17 @@ iframe {
 }
 
 .navBar.biggerScreen {
+  position: fixed;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 10vh;
-  min-height: 50px;
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   border-bottom: 3px solid #CDAA7F;
+  z-index: 9999;
 }
 
 .navBar.biggerScreen div#hambContainer, .navBar.biggerScreen nav#navMenu {
@@ -239,7 +243,6 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .navBar.biggerScreen #navBgScn img {
@@ -251,7 +254,7 @@ iframe {
 }
 
 .navBar.biggerScreen #navBgScn a {
-  color: #FFF;
+  color: #fff;
   margin-right: 2vw;
   text-decoration: none !important;
   position: relative;
@@ -265,13 +268,13 @@ iframe {
 .navBar.biggerScreen #navBgScn a::before {
   content: '';
   position: absolute;
-  bottom: 16%;
+  bottom: -5px;
   left: -15%;
   width: 0%;
-  height: 25%;
+  height: 15%;
   background-color: #CDAA7F;
-  -webkit-transition: width 0.2s ease, height 0.2s ease;
-  transition: width 0.2s ease, height 0.2s ease;
+  -webkit-transition: width 0.2s ease, height 0.1s ease;
+  transition: width 0.2s ease, height 0.1s ease;
   border-radius: 0px;
   pointer-events: none;
   z-index: -1;
@@ -287,11 +290,15 @@ iframe {
 
 .navBar.biggerScreen #navBgScn a:active::before {
   height: 100%;
-  bottom: 5%;
+  bottom: 0%;
   border-radius: 0;
 }
 
-#landingSec {
+.hompageBody {
+  position: relative;
+}
+
+.hompageBody #landingSec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,41 +315,31 @@ iframe {
   font-family: 'Prata';
   font-weight: 500;
   width: 100%;
-  padding-bottom: 20px;
   background-color: #192f42;
+  border-bottom: 3px solid #CDAA7F;
+  padding-top: 13.3vh;
 }
 
-#landingSec > img {
+.hompageBody #landingSec > img {
   width: 100%;
   max-height: 67vh;
   border-bottom: 3px solid #CDAA7F;
 }
 
-#landingSec #lndQt {
-  margin-top: 15px;
-  border: 2px solid #CDAA7F;
-  border-style: inset;
-  background-color: #fffffffd;
-  -webkit-box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
-          box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
-  font-family: 'Ledger';
+.hompageBody #landingSec #lndQt {
+  font-family: 'Prata';
+  font-weight: 400 !important;
+  color: #fff;
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 340px;
+  /* Adjust this value as needed */
+  z-index: 10;
+  /* Ensure it sits above other content */
 }
 
-#landingSec #lndQt p {
-  position: relative;
-  text-decoration: underline !important;
-  -webkit-text-decoration: double !important;
-          text-decoration: double !important;
-}
-
-#landingSec #lndQt p img.openingQt {
-  width: 1vw;
-  position: absolute;
-  bottom: 65px !important;
-  left: -30px;
-}
-
-#marelandSect {
+.hompageBody #marelandSect {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #79797926;
@@ -356,7 +353,7 @@ iframe {
           justify-content: center;
 }
 
-#marelandSect > div#marelandCont {
+.hompageBody #marelandSect > div#marelandCont {
   width: 85% !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +366,7 @@ iframe {
           justify-content: center;
 }
 
-#marelandSect > div#marelandCont #leftTxt {
+.hompageBody #marelandSect > div#marelandCont #leftTxt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +382,7 @@ iframe {
   padding-left: 35px !important;
 }
 
-#marelandSect > div#marelandCont #leftTxt > div {
+.hompageBody #marelandSect > div#marelandCont #leftTxt > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,24 +394,24 @@ iframe {
           align-items: start;
 }
 
-#marelandSect > div#marelandCont #leftTxt > div > p:not(.sctnHpTitles) {
+.hompageBody #marelandSect > div#marelandCont #leftTxt > div > p:not(.sctnHpTitles) {
   text-align: justify;
   text-justify: newspaper;
 }
 
-#marelandSect > div#marelandCont #leftTxt .barSep {
+.hompageBody #marelandSect > div#marelandCont #leftTxt .barSep {
   width: 10px;
   min-height: 300px;
   height: 45vh;
   background-color: #CDAA7F;
 }
 
-#marelandSect > div#marelandCont #picCont {
+.hompageBody #marelandSect > div#marelandCont #picCont {
   width: 50% !important;
   padding-left: 20px !important;
 }
 
-#marelandSect > div#marelandCont #picCont div {
+.hompageBody #marelandSect > div#marelandCont #picCont div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,15 +424,15 @@ iframe {
           justify-content: center;
 }
 
-#marelandSect > div#marelandCont #picCont .marelandImg1 {
+.hompageBody #marelandSect > div#marelandCont #picCont .marelandImg1 {
   height: 50%;
 }
 
-#marelandSect > div#marelandCont #picCont .marelandImg2 {
+.hompageBody #marelandSect > div#marelandCont #picCont .marelandImg2 {
   height: 40%;
 }
 
-section#rclmtnSect {
+.hompageBody section#rclmtnSect {
   background-color: #E3D7C84D;
   border-top: 2px solid #CDAA7F;
   width: 100%;
@@ -451,7 +448,7 @@ section#rclmtnSect {
   position: relative;
 }
 
-section#rclmtnSect div#rclmtnsCont {
+.hompageBody section#rclmtnSect div#rclmtnsCont {
   background-color: #FFF;
   width: 85%;
   display: -webkit-box;
@@ -466,7 +463,7 @@ section#rclmtnSect div#rclmtnsCont {
   height: 100%;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide {
   padding: 20px;
   width: 45%;
   height: 100%;
@@ -484,7 +481,7 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide {
       justify-content: space-around;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,7 +493,7 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic {
           align-items: center;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic img {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic img {
   width: 90%;
   max-height: 80vh;
   -o-object-fit: cover;
@@ -505,7 +502,7 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic img {
      object-position: bottom left;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector {
   width: 87%;
   height: 70px;
   padding: 5px;
@@ -522,7 +519,7 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector {
   margin-top: 10px;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,18 +531,18 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroll
   height: 100%;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller img {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom left;
      object-position: bottom left;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller img.picClicked {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller img.picClicked {
   border: 3px solid #0F4C81;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a {
   cursor: pointer;
   border: 0px;
   background-color: #FFF;
@@ -556,15 +553,15 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a {
   pointer-events: all;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.right {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.right {
   margin-left: 10px;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.left {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.left {
   margin-left: 5px;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.hide {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.hide {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -572,11 +569,11 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.hide 
   pointer-events: none !important;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector ::-webkit-scrollbar {
+.hompageBody section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector ::-webkit-scrollbar {
   display: none;
 }
 
-section#rclmtnSect div#rclmtnsCont #rclmtnDescr {
+.hompageBody section#rclmtnSect div#rclmtnsCont #rclmtnDescr {
   width: 50%;
   height: 100%;
   padding: 20px;
@@ -592,17 +589,17 @@ section#rclmtnSect div#rclmtnsCont #rclmtnDescr {
           justify-content: center;
 }
 
-section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText {
+.hompageBody section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText {
   width: 95%;
 }
 
-section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText p {
+.hompageBody section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText p {
   font-size: 18px !important;
   text-align: justify !important;
   text-justify: newspaper !important;
 }
 
-section#rclmtnSect img#decoboat {
+.hompageBody section#rclmtnSect img#decoboat {
   position: absolute;
   bottom: -30px !important;
   right: 20px;
@@ -682,6 +679,25 @@ footer img {
 
 a#logoNav::before {
   display: none !important;
+}
+
+a#logoNav img {
+  -webkit-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+a#logoNav img:hover {
+  -webkit-transform: rotate(0deg) scale(1.1);
+          transform: rotate(0deg) scale(1.1);
+}
+
+a#logoNav img:active {
+  -webkit-transform: rotate(180deg) scale(1);
+          transform: rotate(180deg) scale(1);
 }
 
 @media only screen and (max-width: 1560px) {
