@@ -250,20 +250,41 @@ iframe{
 	}
 	#lndQt{
 		margin-top: 15px;
-		border: 1px solid #E3D7C833;
-		background-color: #e8e2dbfd;
+		border: 2px solid #CDAA7F;
+		border-style: inset;
+		background-color: #fffffffd;
 		box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
+		font-family: 'Ledger';
 		// flex-direction: column;
 		p{
+			position: relative;
+			text-decoration: underline !important;
+			text-decoration: double !important;
+			// background-color: #CDAA7F;
+			// &::after{
+			// 	content: '';
+			// 	width: 100%;
+			// 	height: 5%;
+			// 	background-color: #CDAA7F;
+			// 	position: absolute;
+			// 	bottom: 10px;
+				
+			// }
 			// font-size: 25px;
 			// position: relative;
 			// margin-bottom: 0px;
 			img{
-				display:  none !important;
-				width: 1vw;
-				position: absolute;
-				bottom: 65px !important;
-				left: -30px;
+				&.openingQt{
+
+					// display:  none !important;
+					width: 1vw;
+					position: absolute;
+					bottom: 65px !important;
+					left: -30px;
+				}
+				&.closingQt{
+
+				}
 			}
 		}
 	}
@@ -421,8 +442,8 @@ section#rclmtnSect{
 				width: 95%;
 				p{
 					font-size: 18px !important;
-					text-align: justify;
-					text-justify: newspaper;
+					text-align: justify !important;
+					text-justify: newspaper !important;
 				}
 			}
 		}

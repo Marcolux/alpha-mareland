@@ -320,14 +320,22 @@ iframe {
 
 #landingSec #lndQt {
   margin-top: 15px;
-  border: 1px solid #E3D7C833;
-  background-color: #e8e2dbfd;
+  border: 2px solid #CDAA7F;
+  border-style: inset;
+  background-color: #fffffffd;
   -webkit-box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
           box-shadow: 15px 18px 28px rgba(170, 170, 170, 0.168);
+  font-family: 'Ledger';
 }
 
-#landingSec #lndQt p img {
-  display: none !important;
+#landingSec #lndQt p {
+  position: relative;
+  text-decoration: underline !important;
+  -webkit-text-decoration: double !important;
+          text-decoration: double !important;
+}
+
+#landingSec #lndQt p img.openingQt {
   width: 1vw;
   position: absolute;
   bottom: 65px !important;
@@ -590,8 +598,8 @@ section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText {
 
 section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText p {
   font-size: 18px !important;
-  text-align: justify;
-  text-justify: newspaper;
+  text-align: justify !important;
+  text-justify: newspaper !important;
 }
 
 section#rclmtnSect img#decoboat {

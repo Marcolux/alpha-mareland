@@ -12,4 +12,9 @@
   font-family: 'Prata';
   src: url("./fonts/Prata/Prata-Regular.ttf");
 }
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=common-style.css.map */
