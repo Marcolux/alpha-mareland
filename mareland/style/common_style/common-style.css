@@ -32,4 +32,15 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* This ensures that padding and border are included in the total width and height */
+  font-family: 'Ledger';
+  min-width: 380px;
+}
 /*# sourceMappingURL=common-style.css.map */

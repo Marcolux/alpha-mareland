@@ -1,4 +1,30 @@
 #MarelandPageSec {
   margin-top: 13.3vh;
+  background-color: #fff;
+}
+
+#MarelandPageSec .marelandPicTextSec {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#MarelandPageSec .marelandPicTextSec img {
+  max-height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 1px solid #cdaa7f4c;
+  -webkit-box-shadow: 6px 6px 6px #cdaa7fe9;
+          box-shadow: 6px 6px 6px #cdaa7fe9;
+}
+
+#MarelandPageSec .marelandPicTextSec p {
+  text-align: justify;
+  text-justify: newspaper;
 }
 /*# sourceMappingURL=mareland.css.map */

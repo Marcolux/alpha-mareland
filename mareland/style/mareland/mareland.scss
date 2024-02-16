@@ -1,3 +1,22 @@
 #MarelandPageSec{
     margin-top: 13.3vh;
+    background-color: #fff;
+    // height: 100%;
+    .marelandPicTextSec{
+        align-items: center;
+        justify-content: center;
+        img{
+            // width: 40vw;
+            max-height: 30vh;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid #cdaa7f4c;
+            box-shadow: 6px 6px 6px #cdaa7fe9;
+        }
+        p{
+            text-align: justify;
+            text-justify: newspaper;
+            
+        }
+    }
 }
