@@ -41,7 +41,6 @@ body {
           box-sizing: border-box;
   /* This ensures that padding and border are included in the total width and height */
   font-family: 'Ledger';
-  min-width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,5 +49,15 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh !important;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+html {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=common-style.css.map */
