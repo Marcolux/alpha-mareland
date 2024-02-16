@@ -42,5 +42,13 @@ body {
   /* This ensures that padding and border are included in the total width and height */
   font-family: 'Ledger';
   min-width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh !important;
 }
 /*# sourceMappingURL=common-style.css.map */

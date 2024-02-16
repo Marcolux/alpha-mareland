@@ -8,10 +8,11 @@
         img{
             // width: 40vw;
             max-height: 30vh;
+            height: 100%;
             object-fit: cover;
             object-position: center;
-            border: 1px solid #cdaa7f4c;
-            box-shadow: 6px 6px 6px #cdaa7fe9;
+            // border: 1px solid #cdaa7f4c;
+            // box-shadow: 6px 6px 6px #cdaa7fe9;
         }
         p{
             text-align: justify;

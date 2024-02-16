@@ -14,13 +14,11 @@
 
 #MarelandPageSec .marelandPicTextSec img {
   max-height: 30vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border: 1px solid #cdaa7f4c;
-  -webkit-box-shadow: 6px 6px 6px #cdaa7fe9;
-          box-shadow: 6px 6px 6px #cdaa7fe9;
 }
 
 #MarelandPageSec .marelandPicTextSec p {

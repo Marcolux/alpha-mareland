@@ -258,7 +258,7 @@ iframe {
   content: '';
   position: absolute;
   bottom: -5px;
-  left: -15%;
+  left: -10%;
   width: 0%;
   height: 15%;
   background-color: #CDAA7F;
@@ -270,7 +270,7 @@ iframe {
 }
 
 .navBar.biggerScreen #navBgScn a:hover::before {
-  width: 130%;
+  width: 120%;
 }
 
 .navBar.biggerScreen #navBgScn a:active {
