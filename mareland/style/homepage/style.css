@@ -728,6 +728,9 @@ a#logoNav img:active {
   section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText p {
     font-size: 17px !important;
   }
+  #lndQt .textQt p {
+    font-size: 30px !important;
+  }
 }
 
 @media only screen and (max-width: 1250px) {
