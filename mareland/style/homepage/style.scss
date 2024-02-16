@@ -442,8 +442,15 @@ footer{
 		margin-bottom: 0px !important;
 	}
 	img{
-		// width: 25%;
-		height: 7vh;
+		img{
+			object-fit: contain;
+			object-position: center;
+			&#olomouc{
+				position: absolute;
+				right: 0px;
+			}
+			// margin-bottom: 20px;
+		}
 	}
 }
 
@@ -692,12 +699,13 @@ a#logoNav{
 			align-items: start;
 			position: relative;
 			img{
-				width: 40%;
+				object-fit: contain;
+				object-position: center;
 				&#olomouc{
 					position: absolute;
 					right: 0px;
 				}
-				margin-bottom: 20px;
+				// margin-bottom: 20px;
 			}
 
 		}

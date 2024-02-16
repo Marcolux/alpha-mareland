@@ -613,8 +613,16 @@ footer p {
   margin-bottom: 0px !important;
 }
 
-footer img {
-  height: 7vh;
+footer img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+footer img img#olomouc {
+  position: absolute;
+  right: 0px;
 }
 
 .sctnHpTitles {
@@ -890,8 +898,10 @@ a#logoNav img:active {
     position: relative;
   }
   footer #logoFooter img {
-    width: 40%;
-    margin-bottom: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
   footer #logoFooter img#olomouc {
     position: absolute;
