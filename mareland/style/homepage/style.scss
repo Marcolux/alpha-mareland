@@ -308,7 +308,7 @@ $backGroundNav: #192f42;
 				gap: 7px;
 
 				div.hlfPic{
-					flex: 1 0 calc(50%-7px);
+					flex: 1 1 50%;
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
@@ -316,17 +316,18 @@ $backGroundNav: #192f42;
 					max-height: 90%;
 					img {
 						width: 100%;
-						height: auto;
+						max-height: 100%;
 						object-fit: cover;
+						overflow-y: auto;
 					}
 					.marelandImg1, .marelandImg2 {
-						aspect-ratio: 0 / 1; // Example: Maintains a 1:1 aspect ratio, adjust as per actual desired ratio
+						aspect-ratio: 0/1; // Example: Maintains a 1:1 aspect ratio, adjust as per actual desired ratio
 					}
 					.marelandImg1{
-						height: 50%;
+						max-height: 50%;
 					}
 					.marelandImg2{
-						height: 40%;
+						max-height: 40%;
 					}
 				}
 			}
