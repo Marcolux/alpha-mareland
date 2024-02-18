@@ -392,15 +392,18 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
-  gap: 10px;
+  gap: 7px;
 }
 
 #marelandSect > div#marelandCont #picCont div.hlfPic {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(50%-10px);
-          flex: 1 0 calc(50%-10px);
+      -ms-flex: 1 0 calc(50%-7px);
+          flex: 1 0 calc(50%-7px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +414,8 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
+  gap: 10px;
+  max-height: 90%;
 }
 
 #marelandSect > div#marelandCont #picCont div.hlfPic img {
