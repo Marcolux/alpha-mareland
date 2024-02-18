@@ -316,7 +316,7 @@ $backGroundNav: #192f42;
 					max-height: 90%;
 					img {
 						width: 100%;
-						max-height: 100%;
+						// max-height: 100%;
 						object-fit: cover;
 						overflow-y: auto;
 					}
@@ -497,9 +497,9 @@ footer{
 	color: #0F4C81 !important;
 }
 .buttonLanding{
-	border: 2px solid #CDAA7F;
+	border: 2px solid #bb8442;
 	background-color: #FFF;
-	color: #CDAA7F;
+	color: #bb8442;
 	font-family: 'Prata';
 	padding: 5px 30px;
 	margin-top: 20px;
@@ -533,13 +533,13 @@ footer{
 	}
 	  
 	&:hover {
-		color:#CDAA7F !important;
+		color:#bb7520 !important;
 		text-decoration: none !important;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 		box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 	}
 }
-a#logoNav{
+a.logoNav{
 	&::before{
 		display: none !important;
 	}
