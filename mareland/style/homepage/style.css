@@ -389,9 +389,18 @@ iframe {
 #marelandSect > div#marelandCont #picCont {
   width: 50% !important;
   padding-left: 20px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  gap: 10px;
 }
 
-#marelandSect > div#marelandCont #picCont div {
+#marelandSect > div#marelandCont #picCont div.hlfPic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50%-10px);
+          flex: 1 0 calc(50%-10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,13 +411,25 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 15px;
 }
 
-#marelandSect > div#marelandCont #picCont .marelandImg1 {
+#marelandSect > div#marelandCont #picCont div.hlfPic img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg1, #marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg2 {
+  aspect-ratio: 0 / 1;
+}
+
+#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg1 {
   height: 50%;
 }
 
-#marelandSect > div#marelandCont #picCont .marelandImg2 {
+#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg2 {
   height: 40%;
 }
 

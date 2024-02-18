@@ -301,16 +301,31 @@ $backGroundNav: #192f42;
 			#picCont{
 				width: 50% !important;
 				padding-left: 20px !important;
-				div{
+				display: flex;
+				flex-wrap: no-wrap;
+				gap: 10px;
+
+				div.hlfPic{
+					flex: 1 0 calc(50%-10px);
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-				}
-				.marelandImg1{
-					height: 50%;
-				}
-				.marelandImg2{
-					height: 40%;
+					gap: 15px;
+
+					img {
+						width: 100%;
+						height: auto;
+						object-fit: cover;
+					}
+					.marelandImg1, .marelandImg2 {
+						aspect-ratio: 0 / 1; // Example: Maintains a 1:1 aspect ratio, adjust as per actual desired ratio
+					}
+					.marelandImg1{
+						height: 50%;
+					}
+					.marelandImg2{
+						height: 40%;
+					}
 				}
 			}
 		}
