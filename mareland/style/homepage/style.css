@@ -547,7 +547,7 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroll
   border: 3px solid #0F4C81;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a {
+section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector i.scroll-button {
   cursor: pointer;
   border: 0px;
   background-color: #FFF;
@@ -558,15 +558,15 @@ section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a {
   pointer-events: all;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.right {
+section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector i.scroll-button.right {
   margin-left: 10px;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.left {
+section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector i.scroll-button.left {
   margin-left: 5px;
 }
 
-section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector a.hide {
+section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector i.scroll-button.hide {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
