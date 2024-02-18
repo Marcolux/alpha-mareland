@@ -381,13 +381,13 @@ iframe {
 
 #marelandSect > div#marelandCont #leftTxt .barSep {
   width: 10px;
-  min-height: 300px;
   height: 45vh;
   background-color: #CDAA7F;
 }
 
 #marelandSect > div#marelandCont #picCont {
   width: 50% !important;
+  height: 100%;
   padding-left: 20px !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,26 +415,21 @@ iframe {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  max-height: 90%;
+  width: 50%;
 }
 
 #marelandSect > div#marelandCont #picCont div.hlfPic img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  overflow-y: auto;
 }
 
-#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg1, #marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg2 {
-  aspect-ratio: 0/1;
+#marelandSect > div#marelandCont #picCont div.hlfPic img.marelandImg1 {
+  aspect-ratio: 2/1.3;
 }
 
-#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg1 {
-  max-height: 50%;
-}
-
-#marelandSect > div#marelandCont #picCont div.hlfPic .marelandImg2 {
-  max-height: 40%;
+#marelandSect > div#marelandCont #picCont div.hlfPic img.marelandImg2 {
+  aspect-ratio: 2/1;
 }
 
 section#rclmtnSect {
@@ -1001,19 +996,19 @@ a.logoNav img:active {
   }
   #landingSec #lndQt {
     padding-right: 10px;
-    width: 95% !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  #landingSec #lndQt .textQt {
+    margin-left: 0px !important;
+    margin-bottom: 10px;
   }
   #landingSec #lndQt p {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
-  #landingSec #lndQt p img {
-    width: 3vw;
-    bottom: 92%;
-    left: -25px;
-  }
-  #landingSec #lndQt p :last-child {
-    display: inline-block;
-    margin-bottom: 8px;
+  .sctnHpTitles {
+    margin: 5px 20px;
   }
   #marelandSect > div#marelandCont {
     width: 100% !important;
@@ -1031,11 +1026,15 @@ a.logoNav img:active {
   }
   #marelandSect > div#marelandCont div#leftTxt {
     border-top: 3px solid #CDAA7F;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 0px;
+    padding-left: 0px !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #marelandSect > div#marelandCont div#leftTxt p.fontSize17 {
+    width: 100% !important;
   }
   #marelandSect > div#marelandCont div#leftTxt .barSep {
     display: none;
@@ -1047,12 +1046,15 @@ a.logoNav img:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-height: 50%;
+    width: 100% !important;
+    height: auto;
+    padding-left: 0px !important;
     padding-bottom: 30px;
     padding-top: 30px;
   }
   #marelandSect > div#marelandCont div#picCont div.hlfPic {
-    width: 47% !important;
+    gap: 0px;
+    padding: 0px !important;
   }
   section#rclmtnSect {
     height: -webkit-fit-content;
@@ -1060,18 +1062,20 @@ a.logoNav img:active {
     height: fit-content;
   }
   section#rclmtnSect div#rclmtnsCont {
-    width: 100% !important;
-    padding: 0px 0px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding: 10px 20px !important;
   }
   section#rclmtnSect div#rclmtnsCont .barSep {
     width: 85%;
   }
   section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide {
-    width: 100%;
+    width: 90%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 40px;
+    padding: 20px !important;
   }
   section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide div#rclmtnBigPic {
     height: 80%;
@@ -1086,16 +1090,29 @@ a.logoNav img:active {
             align-items: center;
   }
   section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector {
-    width: 100%;
-    height: 70px;
+    width: 90%;
+    height: 50px;
   }
   section#rclmtnSect div#rclmtnsCont div#rclmtnPicsSide #rclmtnPicSelector #scroller img {
     height: 92%;
     width: 50%;
   }
+  section#rclmtnSect div#rclmtnsCont #rclmtnDescr {
+    width: 90%;
+    padding: 10px !important;
+  }
+  section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText {
+    width: 100%;
+  }
+  section#rclmtnSect div#rclmtnsCont #rclmtnDescr #rclmtnDescrText p {
+    padding-right: 0px !important;
+  }
   img#decoboat {
-    width: 30%;
-    bottom: -2% !important;
+    width: 150px !important;
+    bottom: 0px !important;
+  }
+  footer #logoFooter p {
+    font-size: 13px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
