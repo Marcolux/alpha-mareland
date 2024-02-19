@@ -24,3 +24,27 @@
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .aboutText {
+        border: 0px !important;
+        p{
+            margin-left: 0px !important;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    #aboutPageSec{
+        padding-top: 0vh;
+        #pierpaoloPic{
+            max-width: 100% !important;
+        }
+        .aboutText {
+            border: 0px !important;
+            p{
+                margin-left: 0px !important;
+                text-align: start !important;
+            }
+        }
+    }
+}
