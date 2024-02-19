@@ -983,13 +983,13 @@ a.logoNav img:active {
 
 @media only screen and (max-width: 500px) {
   #landingSec {
-    padding-top: 40px !important;
+    padding-top: 30px !important;
     height: 90vh;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   #landingSec > img {
-    height: 75%;
+    height: 65%;
     -o-object-position: bottom center;
        object-position: bottom center;
     -o-object-fit: cover;

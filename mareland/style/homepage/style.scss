@@ -783,18 +783,15 @@ a.logoNav{
 @media only screen and (max-width: 500px) {
 
 	#landingSec{
-		padding-top: 40px !important;
+		padding-top: 30px !important;
 		height: 90vh;
 		justify-content: space-around;
 		> img {
-			height: 75%;
-			// aspect-ratio: 1/1;
+			height: 65%;
 			object-position:bottom center;
 			object-fit: cover;
 			border-bottom: 3px solid #CDAA7F !important;
 			border-top: 3px solid #CDAA7F !important;
-			// margin-top: -50px;
-			// z-index: -1;
 		}
 		#lndQt{
 			padding-right: 10px;
@@ -821,7 +818,6 @@ a.logoNav{
 			justify-content: center;
 			padding: 0px 40px;
 			div#leftTxt {
-				// width: 105% !important;
 				border-top: 3px solid #CDAA7F;
 				padding-top: 20px;
 				padding-right: 0px;
@@ -844,7 +840,6 @@ a.logoNav{
 				padding-top: 30px;
 				
 				div.hlfPic{
-					// width: 47% !important;
 					gap: 0px;
 					padding: 0px !important;
 				}
