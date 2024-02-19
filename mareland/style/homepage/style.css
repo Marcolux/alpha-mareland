@@ -987,17 +987,18 @@ a.logoNav img:active {
 
 @media only screen and (max-width: 500px) {
   #landingSec {
-    height: 86.5vh;
+    height: 88vh;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   #landingSec > img {
-    height: 72%;
+    height: 60%;
     -o-object-position: bottom center;
        object-position: bottom center;
     -o-object-fit: cover;
        object-fit: cover;
     border-bottom: 3px solid #CDAA7F !important;
+    margin-top: -50px;
   }
   #landingSec #lndQt {
     padding-right: 10px;
@@ -1007,7 +1008,7 @@ a.logoNav img:active {
   }
   #landingSec #lndQt .textQt {
     margin-left: 0px !important;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
   }
   #landingSec #lndQt p {
     font-size: 19px !important;
