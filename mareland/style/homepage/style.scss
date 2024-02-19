@@ -790,12 +790,12 @@ a.logoNav{
 		height: 88vh;
 		justify-content: space-around;
 		> img {
-			height: 60%;
+			height: 50%;
 			// aspect-ratio: 1/1;
 			object-position:bottom center;
 			object-fit: cover;
 			border-bottom: 3px solid #CDAA7F !important;
-			margin-top: -50px;
+			// margin-top: -50px;
 			// z-index: -1;
 		}
 		#lndQt{
@@ -804,7 +804,7 @@ a.logoNav{
 			
 			.textQt{
 				margin-left: 0px !important;
-				padding-bottom: 30px;
+				padding-bottom: 20px;
 			}
 			p {
 				font-size: 19px !important;

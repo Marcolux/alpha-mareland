@@ -992,13 +992,12 @@ a.logoNav img:active {
         justify-content: space-around;
   }
   #landingSec > img {
-    height: 60%;
+    height: 50%;
     -o-object-position: bottom center;
        object-position: bottom center;
     -o-object-fit: cover;
        object-fit: cover;
     border-bottom: 3px solid #CDAA7F !important;
-    margin-top: -50px;
   }
   #landingSec #lndQt {
     padding-right: 10px;
@@ -1008,7 +1007,7 @@ a.logoNav img:active {
   }
   #landingSec #lndQt .textQt {
     margin-left: 0px !important;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   #landingSec #lndQt p {
     font-size: 19px !important;
