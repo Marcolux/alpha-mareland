@@ -19,7 +19,7 @@ iframe {
 
 .navBar.mobileView {
   max-width: 50px;
-  width: auto;
+  width: 100vw;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@ iframe {
   position: fixed;
   right: 10px;
   top: 10px;
-  border: 1px solid #CDAA7F;
+  border: 2px solid #CDAA7F;
   border-radius: 40px;
   -webkit-transition: max-width 0.5s ease-in-out;
   transition: max-width 0.5s ease-in-out;
@@ -39,11 +39,16 @@ iframe {
 }
 
 .navBar.mobileView.expand {
-  max-width: 800px;
-  height: 100%;
+  max-width: 99%;
+  height: 99.4%;
   border-radius: 0px;
+  border-inline: -12px;
   right: 0px;
   top: 0px;
+}
+
+.navBar.mobileView.expand #navMenu {
+  padding: 0px !important;
 }
 
 .navBar.mobileView #navBgScn {
@@ -185,14 +190,13 @@ iframe {
 }
 
 .navBar.mobileView #navMenu.show {
-  width: 100vw;
+  width: 100%;
 }
 
 .navBar.mobileView #navMenu.show a {
   width: 80%;
   max-width: 100%;
   opacity: 1;
-  margin-left: 30px;
 }
 
 .navBar.mobileView #navMenu.show img {

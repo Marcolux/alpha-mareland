@@ -22,24 +22,28 @@ $backGroundNav: #192f42;
 
 	&.mobileView {
 		max-width: 50px;
-		width: auto;
+		width: 100vw;
 		height: 50px;
 		display: flex;
 		flex-direction: column;
 		position: fixed;
 		right: 10px;
 		top: 10px;
-		border: 1px solid #CDAA7F;
+		border: 2px solid #CDAA7F;
 		border-radius: 40px;
 		transition: max-width 0.5s ease-in-out; 
 		z-index: 9999;
 		&.expand {
-			max-width: 800px;
-			height: 100%;
+			max-width: 99%;
+			height: 99.4%;
 			border-radius: 0px;
+			border-inline: -12px;
 			right: 0px;
 			top: 0px;
 			// height: fit-content;
+			#navMenu{
+				padding: 0px !important;
+			}
 		}
 		#navBgScn{
 			display: none;
@@ -150,12 +154,12 @@ $backGroundNav: #192f42;
 				}
 			}
 			&.show{
-				width: 100vw;
+				width: 100%;
 				a {
 					width: 80%;
 					max-width: 100%;
 					opacity: 1;
-					margin-left: 30px;
+					// margin-left: 30px;
 				}
 				img{
 					// position: absolute;
