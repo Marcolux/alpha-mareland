@@ -913,14 +913,53 @@ a.logoNav img:active {
   #landingSec #lndQt {
     width: 90% !important;
   }
+  footer {
+    position: relative;
+    height: 29vh;
+  }
+  footer #logoFooter p {
+    font-size: 17px !important;
+    position: absolute;
+    top: 160px !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer #logoFooter img {
+    width: 30% !important;
+    position: absolute;
+    top: 60px !important;
+    left: 35px;
+  }
+  footer #logoFooter div {
+    position: absolute;
+    padding-bottom: 0px !important;
+    top: 40px !important;
+    right: 50px;
+    width: 30% !important;
+  }
+  footer #logoFooter div img#olomouc {
+    width: 100% !important;
+    top: 25px !important;
+    left: 2px;
+  }
+  footer #logoFooter div p {
+    font-size: 18px !important;
+    position: absolute;
+    top: -15px !important;
+    left: 10px !important;
+  }
+  footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    font-size: 14px !important;
+  }
 }
 
 @media only screen and (min-width: 901px) {
-  #landingSec #lndQt p img {
-    width: 20px !important;
-    bottom: 80% !important;
-    left: -30px !important;
-  }
   img#decoboat {
     width: 30%;
     bottom: -5% !important;
@@ -939,6 +978,9 @@ a.logoNav img:active {
     position: relative;
     margin-bottom: 0px;
   }
+  footer {
+    height: 35vh;
+  }
   footer #logoFooter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -949,28 +991,43 @@ a.logoNav img:active {
             align-items: center;
     position: relative;
   }
-  footer #logoFooter img {
-    width: 50%;
+  footer #logoFooter > img {
+    width: 50% !important;
+    max-width: 250px !important;
     -o-object-fit: contain;
        object-fit: contain;
     -o-object-position: center;
        object-position: center;
+    left: 0px !important;
+  }
+  footer #logoFooter p {
+    top: 120px !important;
+    left: 0px !important;
+    font-size: 15px !important;
+    text-align: start;
+    padding: 0px !important;
+  }
+  footer #logoFooter div.textWhite {
+    width: 50% !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 0px;
+  }
+  footer #logoFooter div.textWhite img#olomouc {
+    width: 100% !important;
+    max-width: 250px !important;
+    top: 15px !important;
+  }
+  footer #logoFooter div.textWhite p {
+    font-size: 13px !important;
   }
   footer p {
     width: 100% !important;
     font-size: 12px !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 13px !important;
     text-align: justify;
     text-justify: newspaper;
-  }
-  footer div.textWhite {
-    width: 100% !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer div.textWhite p {
-    text-align: center;
   }
   img#decoboat {
     width: 30%;
@@ -1012,7 +1069,7 @@ a.logoNav img:active {
     padding-bottom: 15px;
   }
   #landingSec #lndQt p {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
   .sctnHpTitles {
     margin: 5px 20px;
@@ -1143,27 +1200,27 @@ a.logoNav img:active {
   }
   footer {
     position: relative;
-    height: 27vh;
+    height: 30vh;
   }
   footer #logoFooter p {
     font-size: 13px !important;
     position: absolute;
-    top: 50px !important;
+    top: 70px !important;
   }
   footer #logoFooter img {
     width: 47% !important;
     position: absolute;
-    top: 12px !important;
+    top: 20px !important;
     left: 2px;
   }
   footer #logoFooter div {
     position: absolute;
     padding-bottom: 0px !important;
-    top: 10px !important;
+    top: 5px !important;
     right: 2px;
     width: 47% !important;
   }
-  footer #logoFooter div img {
+  footer #logoFooter div img#olomouc {
     width: 100% !important;
     top: 2px !important;
     left: 2px;
@@ -1171,7 +1228,7 @@ a.logoNav img:active {
   footer #logoFooter div p {
     font-size: 12px !important;
     position: absolute;
-    top: -15px !important;
+    top: -10px !important;
   }
   footer p {
     position: absolute;

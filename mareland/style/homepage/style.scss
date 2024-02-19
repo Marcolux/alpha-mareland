@@ -715,14 +715,53 @@ a.logoNav{
 			width: 90% !important;
 		}
 	}
+	footer{
+		position: relative;
+		height: 29vh;
+		#logoFooter{
+			p{
+				font-size: 17px !important;
+				position: absolute;
+				top: 160px !important;
+				width: fit-content;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			img{
+				width: 30% !important;
+				position: absolute;
+				top: 60px !important;
+				left: 35px;
+			}
+			div{
+				position: absolute;
+				padding-bottom: 0px !important;
+				top: 40px !important;
+				right: 50px;
+				width: 30% !important;
+				img#olomouc{
+					width: 100% !important;
+					top: 25px !important;
+					left: 2px;
+				}
+				p{
+					font-size: 18px !important;
+					position: absolute;
+					top: -15px !important;
+					left: 10px !important;
+				}
+			}
+		}
+		p{
+			position: absolute;
+			bottom: 10px;
+			left: 0px;
+			font-size: 14px !important;
+		}
+	}
 }
  
 @media only screen and (min-width: 901px) {
-	#landingSec #lndQt p img {
-		width: 20px !important;
-		bottom: 80% !important;
-		left: -30px !important;
-	}
 	img#decoboat{
 		width: 30% ;
 		bottom: -5% !important;
@@ -742,32 +781,49 @@ a.logoNav{
 		}
 	}
 	footer{
-	
+		height: 35vh;
 		#logoFooter{
 			flex-direction: column;
 			align-items: center;
 			position: relative;
 
-			img{
-				width: 50%;
+			>img{
+				width: 50% !important;
+				max-width: 250px !important;
 				object-fit: contain;
 				object-position: center;
+				left: 0px !important;
+			}
+			p{
+				top: 120px !important;
+				left: 0px !important;
+				font-size: 15px !important;
+				text-align: start;
+				padding: 0px !important;
 			}
 
+			div.textWhite{
+				width: 50% !important;
+				align-items: center;
+				right: 0px ;
+				img#olomouc{
+					width: 100% !important;
+					max-width: 250px !important;
+					top: 15px !important;
+				}
+				p{
+					font-size: 13px !important;
+				}
+	
+			}
 		}
 		p{
 			width: 100% !important;
 			font-size: 12px !important;
-			margin-bottom: 15px !important;
+			margin-bottom: 13px !important;
 			text-align: justify;
 			text-justify: newspaper;
-		}
-		div.textWhite{
-			width: 100% !important;
-			align-items: center;
-			p{
-				text-align: center;
-			}
+
 		}
 	}
 	img#decoboat{
@@ -806,7 +862,7 @@ a.logoNav{
 				padding-bottom: 15px;
 			}
 			p {
-				font-size: 18px !important;
+				font-size: 17px !important;
 			}
 		} 
 	} 
@@ -915,26 +971,26 @@ a.logoNav{
 	}
 	footer{
 		position: relative;
-		height: 27vh;
+		height: 30vh;
 		#logoFooter{
 			p{
 				font-size: 13px !important;
 				position: absolute;
-				top: 50px !important;
+				top: 70px !important;
 			}
 			img{
 				width: 47% !important;
 				position: absolute;
-				top: 12px !important;
+				top: 20px !important;
 				left: 2px;
 			}
 			div{
 				position: absolute;
 				padding-bottom: 0px !important;
-				top: 10px !important;
+				top: 5px !important;
 				right: 2px;
 				width: 47% !important;
-				img{
+				img#olomouc{
 					width: 100% !important;
 					top: 2px !important;
 					left: 2px;
@@ -942,7 +998,7 @@ a.logoNav{
 				p{
 					font-size: 12px !important;
 					position: absolute;
-					top: -15px !important;
+					top: -10px !important;
 				}
 			}
 		}
