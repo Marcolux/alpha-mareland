@@ -29,6 +29,7 @@ $backGroundNav: #192f42;
 		position: fixed;
 		right: 10px;
 		top: 10px;
+		border: 1px solid #CDAA7F;
 		border-radius: 40px;
 		transition: max-width 0.5s ease-in-out; 
 		z-index: 9999;
@@ -772,11 +773,7 @@ a.logoNav{
 }
 
 @media only screen and (min-width: 501px) {
-	#landingSec #lndQt p img {
-		width: 2vw;
-		bottom: 92%;
-		left: -25px;
-	}
+
 	img#decoboat{
 		width: 30% ;
 		bottom: -2% !important;
@@ -786,15 +783,16 @@ a.logoNav{
 @media only screen and (max-width: 500px) {
 
 	#landingSec{
-		
-		height: 88vh;
+		padding-top: 40px !important;
+		height: 90vh;
 		justify-content: space-around;
 		> img {
-			height: 50%;
+			height: 75%;
 			// aspect-ratio: 1/1;
 			object-position:bottom center;
 			object-fit: cover;
 			border-bottom: 3px solid #CDAA7F !important;
+			border-top: 3px solid #CDAA7F !important;
 			// margin-top: -50px;
 			// z-index: -1;
 		}
@@ -804,11 +802,10 @@ a.logoNav{
 			
 			.textQt{
 				margin-left: 0px !important;
-				padding-bottom: 20px;
+				padding-bottom: 15px;
 			}
 			p {
-				font-size: 19px !important;
-
+				font-size: 18px !important;
 			}
 		} 
 	} 
