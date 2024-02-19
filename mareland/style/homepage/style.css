@@ -986,10 +986,15 @@ a.logoNav img:active {
 }
 
 @media only screen and (max-width: 500px) {
+  #landingSec {
+    height: 86.5vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   #landingSec > img {
-    height: 40vh;
-    -o-object-position: bottom;
-       object-position: bottom;
+    height: 72%;
+    -o-object-position: bottom center;
+       object-position: bottom center;
     -o-object-fit: cover;
        object-fit: cover;
     border-bottom: 3px solid #CDAA7F !important;
@@ -1005,7 +1010,7 @@ a.logoNav img:active {
     margin-bottom: 10px;
   }
   #landingSec #lndQt p {
-    font-size: 18px !important;
+    font-size: 19px !important;
   }
   .sctnHpTitles {
     margin: 5px 20px;

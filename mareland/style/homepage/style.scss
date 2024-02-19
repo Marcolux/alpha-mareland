@@ -787,10 +787,13 @@ a.logoNav{
 
 	#landingSec{
 		
+		height: 86.5vh;
+		justify-content: space-around;
 		> img {
-			height: 40vh;
-			object-position:bottom;
-			object-fit:cover;
+			height: 72%;
+			// aspect-ratio: 1/1;
+			object-position:bottom center;
+			object-fit: cover;
 			border-bottom: 3px solid #CDAA7F !important;
 			// z-index: -1;
 		}
@@ -802,7 +805,7 @@ a.logoNav{
 				margin-bottom: 10px;
 			}
 			p {
-				font-size: 18px !important;
+				font-size: 19px !important;
 
 			}
 		} 
