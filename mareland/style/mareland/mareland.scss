@@ -1,23 +1,121 @@
-#MarelandPageSec{
-    margin-top: 13.3vh;
-    background-color: #fff;
-    // height: 100%;
-    .marelandPicTextSec{
-        align-items: center;
-        justify-content: center;
-        img{
-            // width: 40vw;
-            max-height: 30vh;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            // border: 1px solid #cdaa7f4c;
-            // box-shadow: 6px 6px 6px #cdaa7fe9;
+#mainMareland{
+    background-color: #ebe4dc;
+    margin-top: 13.3vh !important;
+    #MarelandPageSec{
+        background-color: #ffffffb0;
+        border: 2px solid #CDAA7F;
+        align-self: center;
+        .marelandPicTextSec{
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            img{
+                width: 13%;
+                min-width: 200px;
+                max-width: 13%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                object-position: center;
+            }
+            p{
+                text-align: justify;
+                text-justify: newspaper;
+            }
+            &#wikiPic{
+                img{
+                   
+                    max-width: 320px;
+                    min-width: 320px;
+                }
+
+            }
         }
-        p{
-            text-align: justify;
-            text-justify: newspaper;
-            
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #MarelandPageSec{
+        .marelandPicTextSec{
+            flex-direction: column !important;
+            &#wikiPic{
+                flex-direction: column-reverse !important;
+                img{
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    max-height: 50vh !important;
+                    margin-left: 0px !important;
+                    margin-top: 20px;
+                }
+            }
+            img{
+                width: auto !important;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                margin: 0px;
+            }
+            p{
+                width: 100% !important;
+            }
+        }
+        .bottomInfo{
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            margin-left: 20px !important;
+            margin-top: 20px !important;
+            >p{
+                margin: 0px !important;
+                padding-left: 20px !important;
+                width: 100% !important;
+                text-align: start;
+            }
+            :last-child{
+                width: 0% !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    #mainMareland{
+        margin-top: 0vh !important;
+        #MarelandPageSec{
+            background-color: #ffffffb0;
+            border: none !important;
+    
+            margin-top: 20px !important;
+            .marelandPicTextSec{
+                flex-direction: column !important;
+                &#wikiPic{
+                    flex-direction: column-reverse !important;
+                    img{
+                        width: 100% !important;
+                    }
+                }
+                img{
+                    width: 50% !important;
+                    margin: 20px;
+                }
+                p{
+                    padding: 20px 0px !important;
+                    width: 100% !important;
+                    text-align: start !important;
+                }
+            }
+            .bottomInfo{
+                width: 100% !important;
+                display: flex;
+                align-items: center;
+                margin-left: 10px !important;
+                margin-top: 20px !important;
+                >p{
+                    margin: 0px !important;
+                    padding-left: 10px !important;
+                    width: 100% !important;
+                    text-align: start;
+                }
+                :last-child{
+                    width: 0% !important;
+                }
+            }
         }
     }
 }
