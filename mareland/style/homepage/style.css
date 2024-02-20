@@ -915,7 +915,7 @@ a.logoNav img:active {
   }
   footer {
     position: relative;
-    height: 20vh;
+    height: 20vh !important;
   }
   footer #logoFooter p {
     font-size: 17px !important;
@@ -1200,7 +1200,7 @@ a.logoNav img:active {
   }
   footer {
     position: relative;
-    height: 27vh;
+    height: 27vh !important;
   }
   footer #logoFooter p {
     font-size: 13px !important;
