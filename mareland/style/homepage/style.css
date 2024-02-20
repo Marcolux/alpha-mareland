@@ -915,7 +915,7 @@ a.logoNav img:active {
   }
   footer {
     position: relative;
-    height: 20vh !important;
+    height: 30vh !important;
   }
   footer #logoFooter p {
     font-size: 17px !important;
@@ -979,7 +979,7 @@ a.logoNav img:active {
     margin-bottom: 0px;
   }
   footer {
-    height: 55vh !important;
+    height: 30vh !important;
   }
   footer #logoFooter {
     -webkit-box-orient: vertical;
