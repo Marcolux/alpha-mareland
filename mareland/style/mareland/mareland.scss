@@ -1,6 +1,7 @@
 #mainMareland{
     background-color: #ebe4dc;
     margin-top: 13.3vh !important;
+    .sctnHpTitles{font-family: 'Prata'}
     #MarelandPageSec{
         background-color: #ffffffb0;
         border: 2px solid #CDAA7F;
@@ -10,12 +11,15 @@
             justify-content: center;
             width: 100%;
             img{
-                width: 13%;
-                min-width: 200px;
-                max-width: 13%;
+                // width: 13%;
+                // min-width: 200px;
+                // max-width: 13%;
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 object-position: center;
+                &.logoPic{
+                    max-width: 200px !important;
+                }
             }
             p{
                 text-align: justify;
@@ -24,10 +28,14 @@
             &#wikiPic{
                 img{
                    
-                    max-width: 320px;
-                    min-width: 320px;
+                    max-height: 320px;
+                    // min-width: 320px;
                 }
-
+                sub{
+                    text-align: justify;
+                    text-justify: newspaper;
+                    word-wrap: break-word;
+                }
             }
         }
     }
@@ -37,7 +45,7 @@
         .marelandPicTextSec{
             flex-direction: column !important;
             &#wikiPic{
-                flex-direction: column-reverse !important;
+                // flex-direction: column-reverse !important;
                 img{
                     width: 100% !important;
                     max-width: 100% !important;
@@ -85,7 +93,7 @@
             .marelandPicTextSec{
                 flex-direction: column !important;
                 &#wikiPic{
-                    flex-direction: column-reverse !important;
+                    // flex-direction: column-reverse !important;
                     img{
                         width: 100% !important;
                         margin: 10px !important;

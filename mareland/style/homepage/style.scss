@@ -672,7 +672,10 @@ a.logoNav{
 		}
 	}
 	.textQt{
-		margin-left: 25%;
+		margin-left: 25vw;
+		&.qtBtm{
+			margin-top: 10px !important;
+		}
 	}
 }
 @media only screen and (max-width: 1100px) {

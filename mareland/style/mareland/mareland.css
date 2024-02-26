@@ -3,6 +3,10 @@
   margin-top: 13.3vh !important;
 }
 
+#mainMareland .sctnHpTitles {
+  font-family: 'Prata';
+}
+
 #mainMareland #MarelandPageSec {
   background-color: #ffffffb0;
   border: 2px solid #CDAA7F;
@@ -22,14 +26,15 @@
 }
 
 #mainMareland #MarelandPageSec .marelandPicTextSec img {
-  width: 13%;
-  min-width: 200px;
-  max-width: 13%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+#mainMareland #MarelandPageSec .marelandPicTextSec img.logoPic {
+  max-width: 200px !important;
 }
 
 #mainMareland #MarelandPageSec .marelandPicTextSec p {
@@ -38,8 +43,13 @@
 }
 
 #mainMareland #MarelandPageSec .marelandPicTextSec#wikiPic img {
-  max-width: 320px;
-  min-width: 320px;
+  max-height: 320px;
+}
+
+#mainMareland #MarelandPageSec .marelandPicTextSec#wikiPic sub {
+  text-align: justify;
+  text-justify: newspaper;
+  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -48,12 +58,6 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-  }
-  #MarelandPageSec .marelandPicTextSec#wikiPic {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
   }
   #MarelandPageSec .marelandPicTextSec#wikiPic img {
     width: 100% !important;
@@ -109,12 +113,6 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-  }
-  #mainMareland #MarelandPageSec .marelandPicTextSec#wikiPic {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
   }
   #mainMareland #MarelandPageSec .marelandPicTextSec#wikiPic img {
     width: 100% !important;
