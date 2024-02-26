@@ -453,23 +453,20 @@ footer{
 	#logoFooter{
 		align-items: center;
 		justify-content: space-between;
+		img{
+			max-width: 300px !important;
+			&#olomouc{
+				max-width: 270px !important;
+			}
+		}
 	}
 	p{
 		text-align: justify;
 		text-justify: newspaper;
 		width: 50%;
 		margin-bottom: 0px !important;
-	}
-	img{
-		img{
-			object-fit: contain;
-			object-position: center;
-			&#olomouc{
-				position: absolute;
-				right: 0px;
-			}
-			// margin-bottom: 20px;
-		}
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -732,6 +729,7 @@ a.logoNav{
 			}
 			img{
 				width: 30% !important;
+				max-width: 300px !important;
 				position: absolute;
 				top: 60px !important;
 				left: 35px;
@@ -812,7 +810,7 @@ a.logoNav{
 				img#olomouc{
 					width: 100% !important;
 					max-width: 250px !important;
-					top: 15px !important;
+					top: 0px !important;
 				}
 				p{
 					font-size: 13px !important;
@@ -843,7 +841,7 @@ a.logoNav{
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
 	#landingSec{
 		padding-top: 30px !important;
@@ -974,12 +972,12 @@ a.logoNav{
 	}
 	footer{
 		position: relative;
-		height: 32vh !important;
+		height: 220px !important;
 		#logoFooter{
 			p{
 				font-size: 13px !important;
 				position: absolute;
-				top: 70px !important;
+				top: 80px !important;
 			}
 			img{
 				width: 47% !important;

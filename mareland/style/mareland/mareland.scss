@@ -11,9 +11,6 @@
             justify-content: center;
             width: 100%;
             img{
-                // width: 13%;
-                // min-width: 200px;
-                // max-width: 13%;
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 object-position: center;
@@ -27,9 +24,7 @@
             }
             &#wikiPic{
                 img{
-                   
                     max-height: 320px;
-                    // min-width: 320px;
                 }
                 sub{
                     text-align: justify;
@@ -38,6 +33,13 @@
                 }
             }
         }
+        img.bannersPic{
+            width: 100% !important;
+            max-height: 250px;
+            aspect-ratio: 2/1;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -45,7 +47,6 @@
         .marelandPicTextSec{
             flex-direction: column !important;
             &#wikiPic{
-                // flex-direction: column-reverse !important;
                 img{
                     width: 100% !important;
                     max-width: 100% !important;
@@ -64,25 +65,25 @@
                 width: 100% !important;
             }
         }
-        .bottomInfo{
-            width: 100% !important;
-            display: flex;
-            align-items: center;
-            margin-left: 20px !important;
-            margin-top: 20px !important;
-            >p{
-                margin: 0px !important;
-                padding-left: 20px !important;
-                width: 100% !important;
-                text-align: start;
-            }
-            :last-child{
-                width: 0% !important;
-            }
-        }
+        // .bottomInfo{
+        //     width: 100% !important;
+        //     display: flex;
+        //     align-items: center;
+        //     margin-left: 20px !important;
+        //     margin-top: 20px !important;
+        //     >p{
+        //         margin: 0px !important;
+        //         padding-left: 20px !important;
+        //         width: 100% !important;
+        //         text-align: start;
+        //     }
+        //     :last-child{
+        //         width: 0% !important;
+        //     }
+        // }
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     #mainMareland{
         margin-top: 0vh !important;
         padding: 0px !important;
@@ -90,18 +91,19 @@
             background-color: #ffffffb0;
             border: none !important;
             margin-top: 0px !important;
+            .sctnHpTitles {
+                margin-right: 5px !important;
+            }
             .marelandPicTextSec{
                 flex-direction: column !important;
+                div{
+                    width: 100% !important;
+                }
                 &#wikiPic{
-                    // flex-direction: column-reverse !important;
                     img{
                         width: 100% !important;
                         margin: 10px !important;
                     }
-                }
-                img{
-                    width: 50% !important;
-                    margin: 20px;
                 }
                 p{
                     padding: 20px 0px !important;
@@ -109,21 +111,11 @@
                     text-align: start !important;
                     letter-spacing: 0px;
                 }
+
             }
             .bottomInfo{
-                width: 100% !important;
-                display: flex;
-                align-items: center;
-                margin-left: 10px !important;
-                margin-top: 20px !important;
-                >p{
-                    margin: 0px !important;
-                    padding-left: 0px !important;
-                    width: 100% !important;
-                    text-align: start;
-                }
-                :last-child{
-                    width: 0% !important;
+                p{
+                    padding: 0px !important;
                 }
             }
         }
