@@ -1240,6 +1240,7 @@ a.logoNav img:active {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    padding: 0px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
