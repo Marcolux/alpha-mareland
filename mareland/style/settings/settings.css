@@ -30415,6 +30415,10 @@
   color: #CDAA7F !important;
 }
 
+.textSand:active {
+  color: #fff !important;
+}
+
 .textBlue {
   color: #192f42 !important;
 }
